@@ -1,0 +1,23 @@
+1-2h VM setup ja packageite tirimine
+30min skeleti tegemine
+2,5h dependency hell
+esimene käivitus localhost:8080 -> {"message":"Not Found","_links":{"self":{"href":"/","templated":false}},"_embedded":{"errors":[{"message":"Page Not Found"}]}}
+
+30min vue skelett
+3h vue dependency hell
+1h frontend paistab toimivat backend jupsib
+30min
+1h
+teen uue backendi
+30min
+võtsin vana backendi tagasi
+2h
+1h
+2h
+tegin kolmanda backendi, proovin teha ainult dokumentatsiooni järg
+3h - selgus, et terve see aeg üritab mikronaut suhelda posgresiga, kasutades kasutajanime ja parooli, mis ei ole minu ette kirjutatud.
+
+
+14:27:15.047 [main] INFO  io.micronaut.runtime.Micronaut - Startup completed in 738ms. Server Running: http://localhost:8080
+14:28:14.817 [vert.x-eventloop-thread-0] ERROR i.m.m.health.indicator.HealthResult - Health indicator [vertx-pg-client] reported exception: io.vertx.pgclient.PgException: FATAL: password authentication failed for user "user" (28P01)
+io.vertx.pgclient.PgException: FATAL: password authentication failed for user "user" (28P01)

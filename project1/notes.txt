@@ -1,0 +1,56 @@
+Documents/project1/
+
+library - esimene mikronaut (põhi jamamine oli sellega)
+library-ui - vue
+my-app - mikronaut testikas
+workffs - mikronaut testikas v2 (sellega sain viimase bug'i nähtavale)
+
+____________________________________________
+
+koodi kirjutus programm - sublime-text
+andbebaasi sanity check - Beekeeper
+compile ja käivitus - Terminal
+________________________
+
+mikronaut
+./gradlew clean build
+./gradlew run
+
+
+
+javastuff@javastuff-VirtualBox:~/Documents/project1/library$ java -version
+java version "17.0.10" 2024-01-16 LTS
+Java(TM) SE Runtime Environment (build 17.0.10+11-LTS-240)
+Java HotSpot(TM) 64-Bit Server VM (build 17.0.10+11-LTS-240, mixed mode, sharing)
+
+
+javastuff@javastuff-VirtualBox:~/Documents/project1/library$ npm -version
+10.4.0
+
+
+javastuff@javastuff-VirtualBox:~/Documents/project1/library$ mn -Version
+Micronaut Version: 4.3.2
+
+
+javastuff@javastuff-VirtualBox:~/Documents/project1/library$ node -v
+v18.17.0
+
+javastuff@javastuff-VirtualBox:~/Documents/project1/library$ groovy --version
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.codehaus.groovy.reflection.CachedClass (file:/usr/share/groovy/lib/groovy-2.4.21.jar) to method java.lang.Object.finalize()
+WARNING: Please consider reporting this to the maintainers of org.codehaus.groovy.reflection.CachedClass
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Groovy Version: 2.4.21 JVM: 11.0.22 Vendor: Ubuntu OS: Linux
+
+
+javastuff@javastuff-VirtualBox:~/Documents/project1/library$ psql --version
+psql (PostgreSQL) 14.11 (Ubuntu 14.11-0ubuntu0.22.04.1)
+
+CREATE TABLE books (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    author VARCHAR(255) NOT NULL,
+    isbn VARCHAR(20) UNIQUE NOT NULL,
+    status VARCHAR(20) DEFAULT 'AVAILABLE'
+);

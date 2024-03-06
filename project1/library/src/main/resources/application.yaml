@@ -1,0 +1,21 @@
+micronaut:
+  application:
+    name: library
+datasources:
+  default:
+    url: jdbc:postgresql://localhost:5432/seconduserdb
+    driverClassName: org.postgresql.Driver
+    username: seconduser
+    password: SuperLongPW
+    dialect: POSTGRES
+jpa:
+  default:
+    entity-scan:
+      packages: 'com.example.library.domain'
+    properties:
+      hibernate:
+        bytecode:
+          provider: none
+        hbm2ddl:
+          auto: update
+        show_sql: true
